@@ -1,0 +1,7 @@
+/home/HwHiAiUser/experiment/Ascend310/build/CMakeFiles/install/strip.dir
+/home/HwHiAiUser/experiment/Ascend310/build/CMakeFiles/edit_cache.dir
+/home/HwHiAiUser/experiment/Ascend310/build/CMakeFiles/main.dir
+/home/HwHiAiUser/experiment/Ascend310/build/CMakeFiles/rebuild_cache.dir
+/home/HwHiAiUser/experiment/Ascend310/build/CMakeFiles/list_install_components.dir
+/home/HwHiAiUser/experiment/Ascend310/build/CMakeFiles/install/local.dir
+/home/HwHiAiUser/experiment/Ascend310/build/CMakeFiles/install.dir
