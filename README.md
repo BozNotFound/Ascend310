@@ -8,5 +8,5 @@
 
 1. 文件切换到HwHiAiUser 用户，进入`/home/HwHiAiUser/experiment/Ascend310/scripts`目录修改`param.conf`文件。如果使用TYPE-C线连接开发板，则将这两个参数修改为“192.168.1.2”。
 2. 进入`/home/HwHiAiUser/experiment/Ascend310/model`目录下，执行`atc --model=./yolov3.prototxt --weight=./yolov3.caffemodel --framework=0 --output=yolov3 --soc_version=Ascend310 --insert_op_conf=./aipp_bgr.cfg`，将 caffe 框架的模型和权重文件转化为昇腾平台下适配的om模型(建议手动输入指令)。等待5分钟左右，当看到`ATC run success`字样，表示模型转换已经成功， 查看当前目录，可以看到`yolov3.om`，为本实验需要加载的模型文件。 
-3. 执行`bash /home/HwHiAiUser/software/samples/common/run_presenter_server.sh /home/HwHiAiUser/experiment/Ascend310/scripts/param.conf` 指令开启 web 服务器。 使用给出的网址http://192.168.1.2:7007 来打开电脑的浏览器来访问web页面。若为网线连接开发板则使用http://192.168.0.2:7007 来访问。 
+3. 执行`bash /home/HwHiAiUser/software/samples/common/run_presenter_server.sh /home/HwHiAiUser/experiment/Ascend310/scripts/param.conf` 指令开启 web 服务器。 使用给出的网址来打开电脑的浏览器来访问web页面。
 4. 进入`/home/HwHiAiUser/experiment/Ascend310/out`目录，执行`./main -t  Yolov3_Test`来加载视频文件运行推理程序。 
